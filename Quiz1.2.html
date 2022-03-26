@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang = "en">
+<head>
+<meta charset="UTF-8">
+<meta name = "viewport" content = "width=device-width", initial-scake="1.0">    
+<title>AMLZ Quiz 1</title>
+</head>
+<body>
+
+    <h1>Question 1</h1>
+    <p></p>
+    <script>
+        const voters = [
+        {name: "John Doe", isRegisterd: true},
+        {name: "Nick Fury", isRegisterd: false},
+        {name: "Steve Rogers", isRegisterd: true},
+        {name: "Tony Stark", isRegisterd: false},
+        {name: "Stephen Strange", isRegisterd: false}
+
+        ]
+            const registeredVoter = voters.filter (
+                (voters) => voters.isRegisterd === true
+            );
+
+            const nonregisteredVoter = voters.filter (
+                (voters) => voters.isRegisterd === false
+            );
+
+            console.log("Non Registered Voters: ");
+            nonregisteredVoter.forEach((voters, index) => {
+                console.log(index+1,".)", voters.name)
+            });
+
+
+            console.log("\nRegistered Voters: ");
+            registeredVoter.forEach((voters, index) => {
+                console.log(index+1,".)", voters.name)
+            });
+    </script>
+</body>
+</html>
