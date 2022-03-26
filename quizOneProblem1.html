@@ -10,32 +10,29 @@
     <h1>quizOneProblem1</h1>
     <p></p>
     <script>
-       const voters = [
-        {name: "John Doe", isRegisterd: true},
-        {name: "Nick Fury", isRegisterd: false},
-        {name: "Steve Rogers", isRegisterd: true},
-        {name: "Tony Stark", isRegisterd: false},
-        {name: "Stephen Strange", isRegisterd: false}
+        const x = 1;
+        const y = 0;
 
-            ]
-            const registeredVoter = voters.filter (
-                (voters) => voters.isRegisterd === true
-            );
-
-            const nonregisteredVoter = voters.filter (
-                (voters) => voters.isRegisterd === false
-            );
-
-            console.log("Non Registered Voters: ");
-            nonregisteredVoter.forEach((voters, index) => {
-                console.log(index+1,".)", voters.name)
-            });
-
-
-            console.log("\nRegistered Voters: ");
-            registeredVoter.forEach((voters, index) => {
-                console.log(index+1,".)", voters.name)
-            });
+        for (let x=1; x<=200;)
+        {
+            if ((x % 3 == y) && (x % 5 == y))
+            {
+                console.log("Undecided");
+            }
+            else if (x % 3 == y)
+            {
+                console.log("Leni");
+            }
+            else if (x % 5 == y)
+            {
+                console.log("BongBong");
+            }
+            else 
+            {
+                console.log (x);
+            }
+            x++;
+        }
     </script>
 </body>
 </html>
